@@ -1,0 +1,72 @@
+#musician_line-up {  
+  background-color: #f8d8c5;
+}
+#musician_line-up .wrap2 {  
+  padding-top: 40rem;
+}
+#musician_line-up .wrap2 h2{  
+  color: #f08c68;
+}
+#musician_line-up .wrap2 h2::before{
+  
+  background-image: url(../img/mic.svg);
+}
+#musician_line-up .wrap2 .teb_menu ul.teb_list {  
+  margin: 7rem 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+#musician_line-up .wrap2 .teb_menu ul.teb_list li { 
+  display: inline-block;
+  border-radius: 50%;
+}
+#musician_line-up .wrap2 .teb_menu ul.teb_list li a { 
+  display: block;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border-radius: 50%;
+    /* 기존컬러 */
+    /*   color: #5D778B; */ 
+  color: #888;
+  background: #e9c9b7;
+}
+#musician_line-up .wrap2 .teb_menu ul.teb_list li a:hover{
+  background: #f08c68;
+  color: #fff;
+}
+#musician_line-up .wrap2 .teb_menu ul.teb_list li a span {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-weight: 600;
+}
+#musician_line-up .wrap2 .teb_img ul.line-up li {  
+  text-align: center;
+}
+#musician_line-up .wrap2 .teb_img ul.line-up li.list-start{
+  
+}
+#musician_line-up .wrap2 .teb_img ul.line-up li img {
+  border-radius: 10px;
+  scale: 0.93;
+}
+#musician_line-up .wrap2 .teb_img ul.line-up li p {
+  font-weight: 400;
+  color: #1d1d1d;
+  padding: 1.5rem 0 2.5rem 0;
+  line-height: 1.5;
+}
+#musician_line-up .wrap2 .teb_img ul.line-up .slick-prev,
+#musician_line-up .wrap2 .teb_img ul.line-up .slick-next{
+  top: 40%;
+}
+#musician_line-up .wrap2 .teb_img ul.line-up .slick-dots{
+  
+  bottom: -20px;
+}
+.teb_img .m2, .teb_img .m3, .teb_img .m4, .teb_img .m5, .teb_img .m6, .teb_img .m7, .teb_img .m8, .teb_img .m9 {
+  display: none;
+}

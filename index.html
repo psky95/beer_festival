@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://psky95.github.io/beer_festival/">
+    <meta property="og:description" content="대한민국 인천 송도맥주축제 웹 홈페이지">
+    <meta property="og:keywords" content="맥주,축제,인천 송도,인천 축제">
+    <meta property="og:title" content="인천 송도 맥주축제">
+    <meta name="og:image" content="이미지프로필삽입예정"/>
+    <meta name="description" content="대한민국 인천 송도맥주축제 웹 홈페이지">
+    <meta name="keywords" content="맥주,축제,인천 송도,인천 축제">
+    <title>송도 맥주축제</title>
+     <!-- 프리텐다드 폰트적용 -->
+     <link rel="preload" as="style" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css"/>
+     <!-- 폰트어썸 CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/musician_line-up.css">
+    <link rel="stylesheet" href="css/beer_line-up.css">
+    <link rel="stylesheet" href="css/food_line-up.css">
+    <link rel="stylesheet" href="css/timetable.css">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/enjoy.css">
+    <link rel="stylesheet" href="css/community&footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- 제이쿼리 연결 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script></script> 
+    <!-- 슬릭 js -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script src="slick/slick.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#beer_line-up .wrap2 .teb_menu ul.teb_list").slick({
+                autoplay: true,
+                autoplaySpeed: 3500,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                speed: 1500,
+                responsive: [{
+                    breakpoint: 461,
+                    settings: {
+                    arrows: false,
+                    autoplay: false,
+                    swipe: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: false
+                    }
+                }]
+            });
+            $("#food_line-up .wrap2 .teb_menu ul.teb_list:nth-child(1)").slick({
+                autoplay: true,
+                autoplaySpeed: 3500,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                speed: 1500,
+                responsive: [{
+                    breakpoint: 461,
+                    settings: {
+                    arrows: false,
+                    autoplay: false,
+                    swipe: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: false
+                    }
+                }]
+            });
+            $("#food_line-up .wrap2 .teb_menu ul.teb_list:nth-child(2)").slick({
+                autoplay: true,
+                autoplaySpeed: 4000,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                speed: 1000,
+                responsive: [{
+                    breakpoint: 461,
+                    settings: {
+                    arrows: false,
+                    autoplay: false,
+                    swipe: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: false
+                    }
+                }]
+            });
+        });
+        $(document).ready(function(){
+            $("#musician_line-up .wrap2 .teb_img ul.line-up").slick({
+                autoplay: true,
+                autoplaySpeed: 4000,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                speed: 1000,
+                responsive: [{
+                    breakpoint: 461,
+                    settings: {
+                    arrows: false,
+                    autoplay: false,
+                    swipe: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: false
+                    }
+                }]
+            });
+            $("#musician_line-up .wrap2 .teb_menu ul.teb_list li:first-child a").css({
+                background: "#f08c68",
+                color: "#fff"
+            });
+            $("#musician_line-up .wrap2 .teb_menu ul.teb_list li a").click(function(){
+                $(this).css({
+                    background: "#f08c68",
+                    color: "#fff"
+                });
+                $("#musician_line-up .wrap2 .teb_menu ul.teb_list li a").not(this).css({
+                    background: "",
+                    color: ""
+                });
+                // 구분선
+                var index = $(this).parent().index();
+                $(".teb_img #musician_list").css("display", "none");
+                $(".teb_img #musician_list:eq(" + index + ")").css("display", "block");
+                $("#musician_line-up .wrap2 .teb_img ul.line-up").slick('refresh');
+                return false;
+            });
+        });
+    </script>
+</head>
+<body>
+    <section id="title">
+        <div class="wrap paddingT100">
+            <h1 class="hide">송도 맥주축제</h1>
+            <div class="title-head">
+                <img src="img/typo.png" alt="송도 맥주 페스티벌 로고 이미지">
+                <div class="title-box">
+                    <h2 class="h5">송도 달빛축제공원</h2>
+                    <time class="h2" datetime="2023-08-24">08.24 <span class="h4">Fri</span> - 09.01 <span class="h4">Sat</span></time>
+                    <h3 class="p">Songdo Moonlight Festival Park</h3>
+                    <div class="title-link">
+                        <a href="" class="more"><span>GET TICKETS</span></a>
+                        <a href="" class="more"><span>GO INSTARGRAM</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="intro">
+        <div class="wrap2 padding100">
+            <div class="intro-title">
+                <h2 class="h1">Songdo Global<span class="block">Beer Festival</span></h2>
+                <p class="since h5">Since 2011</p>
+                <h3 class="h5">찾아라 인생맥주!</h3>
+                <p class="h7">푸른 잔디가 시원하게 반짝이는 공원에서 열리는
+                    <br>초대형 맥주 & 음악 축제!
+                    <br>
+                    <br>아시아 최대 규모의 무대, 10만제곱미터의 행사장에서 가장
+                    <br>맛있는 맥주와 먹거리, 즐거운 라이브 콘서트와 불꽃놀이, EDM
+                    <br>파티가 펼쳐집니다.
+                    <br>
+                    <br>지금까지 경험해보지 못했던 인생 최고의 맥주와
+                    <br>축제를 인천 송도에서 즐겨보세요!
+                </p>
+            </div>
+            <div class="intro-img"><img src="img/intro.jpg" alt="송도 맥주축제 전경사진"></div>
+        </div>
+    </section>
+    <section id="content">
+        <h2 class="hide">인천맥주축제의 컨텐츠 이미지 설명!</h2>
+        <article class="content-item">
+            <div class="content-imgbox" style="background-image: url('img/content_1.jpg');">
+                <div class="content-hbox">
+                    <h3 class="h2">Painting In The Sky</h3>
+                    <p class="h5">불꽃놀이</p>
+                    <span></span>
+                    <p class="h7">맥주, 음악과 함께 즐기는 파이로 뮤지컬
+                        <br>친구 연인 가족과 함께 편하게 앉아 맥주를 마시며 즐기는 9일간의 불꽃놀이!
+                        <br>음악에 맞춰 상공에서 불꽃이 춤을 추며 그려내는 파이로 뮤지컬(Pyro Musical) 
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article class="content-item">
+            <div class="content-imgbox" style="background-image: url('img/content_2.jpg');">
+                <div class="content-hbox">
+                    <h3 class="h2">Life Is Live!</h3>
+                    <p class="h5">뮤직 페스티벌</p>
+                    <span></span>
+                    <p class="h7">역대급 라인업이 펼치는 9일간의 라이브 콘서트
+                        <br>락밴드, 힙합, 인디 뮤지션부터 EDM 파티까지 다채로운 장르 공연을 수많은 맥주와 함께 늦은 여름밤,
+                        <br>맥주와 함께 힐링 공연을 즐겨요! 
+                    </p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section id="content2">
+        <h2 class="hide">미리보는 컨텐츠 사진!</h2>
+        <div class="wrap">
+            <a href="">
+                <img src="img/content_2-1.jpg" alt="2023 송도맥주축제 섬네일 이미지">
+                <p class="h7"># 2023 송도맥주축제</p>
+            </a>
+            <a href="">
+                <img src="img/content_2-2.jpg" alt="송도맥주축제 현장에서 즐기고 있는 사람들">
+                <p class="h7"># 2022 송도맥주축제로 미리보는 현장</p>
+            </a>
+            <a href="">
+                <img src="img/content_2-3.jpg" alt="Songdo Beer Festival_Classic 섬네일 이미지">
+                <p class="h7"># Songdo Beer Festival_Classic</p>
+            </a>
+            </div>
+    </section>
+    <section id="musician_line-up">
+        <div class="wrap2 paddingB100">
+            <h2 class="h1 flex flex-center">Musician Line-Up</h2>
+            <div class="teb_menu">
+                <ul class="teb_list flex flex-center">
+                    <li><a href="#"><span>8/24</span></a></li>
+                    <li><a href="#"><span>8/25</span></a></li>
+                    <li><a href=""><span>8/26</span></a></li>
+                    <li><a href=""><span>8/27</span></a></li>
+                    <li><a href=""><span>8/28</span></a></li>
+                    <li><a href=""><span>8/29</span></a></li>
+                    <li><a href=""><span>8/30</span></a></li>
+                    <li><a href=""><span>8/31</span></a></li>
+                    <li><a href=""><span>9/1</span></a></li>
+                </ul>
+            </div>
+            <div class="teb_img">
+                <div id="musician_list" class="m1">
+                    <ul class="line-up">
+                        <li class="list-start">
+                            <img src="img/artist1/lineup1.jpg" alt="정다경 이미지 사진">
+                            <p class="h7">정다경</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist1/lineup2.jpg" alt="멍키헤드 이미지 사진">
+                            <p class="h7">멍키헤드</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist1/lineup3.jpg" alt="강산에 이미지 사진">
+                            <p class="h7">강산에</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist1/lineup4.jpg" alt="버벌진트 이미지 사진">
+                            <p class="h7">버벌진트</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist1/lineup5.jpg" alt="범키 이미지 사진">
+                            <p class="h7">범키</p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="musician_list" class="m2">
+                    <ul class="line-up">
+                        <li class="list-start">
+                            <img src="img/artist2/lineup6.png" alt="포르테 디 콰트로 이미지 사진">
+                            <p class="h7">포르테 디 콰트로</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist2/lineup7.jpg" alt="크라잉넛 이미지 사진">
+                            <p class="h7">크라잉넛</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist2/lineup8.jpg" alt="체리필터 이미지 사진">
+                            <p class="h7">체리필터</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist2/lineup9.jpg" alt="보이스퍼 이미지 사진">
+                            <p class="h7">보이스퍼</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist2/lineup10.jpg" alt="설하수 이미지 사진">
+                            <p class="h7">설하수</p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="musician_list" class="m3">
+                    <ul class="line-up">
+                        <li class="list-start">
+                            <img src="img/artist3/lineup11.jpg" alt="봄여름가을겨울 이미지 사진">
+                            <p class="h7">봄여름가을겨울</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist3/lineup12.jpg" alt="김사월X김해원 이미지 사진">
+                            <p class="h7">김사월X김해원</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist3/lineup13.jpg" alt="앗싸 이미지 사진">
+                            <p class="h7">앗싸</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist3/lineup14.jpg" alt="김지원 이미지 사진">
+                            <p class="h7">김지원</p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="musician_list" class="m4">
+                    <ul class="line-up">
+                        <li class="list-start">
+                            <img src="img/artist4/lineup15.jpg" alt="변진섭 이미지 사진">
+                            <p class="h7">변진섭</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist4/lineup16.jpg" alt="ABTB 이미지 사진">
+                            <p class="h7">ABTB</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist4/lineup17.jpg" alt="오드트리 이미지 사진">
+                            <p class="h7">오드트리</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist4/lineup18.jpg" alt="더 그레이트볼스 이미지 사진">
+                            <p class="h7">더 그레이트볼스</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist4/lineup19.jpg" alt="블랙 페퍼스 이미지 사진">
+                            <p class="h7">블랙 페퍼스</p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="musician_list" class="m5">
+                    <ul class="line-up">
+                        <li class="list-start">
+                            <img src="img/artist5/lineup20.jpg" alt="추가열 이미지 사진">
+                            <p class="h7">추가열</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist5/lineup21.jpg" alt="버스터즈 이미지 사진">
+                            <p class="h7">버스터즈</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist5/lineup22.jpg" alt="스트릿건즈 이미지 사진">
+                            <p class="h7">스트릿건즈</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist5/lineup23.jpg" alt="타카피 이미지 사진">
+                            <p class="h7">타카피</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist5/lineup24.jpg" alt="한유빈 이미지 사진">
+                            <p class="h7">한유빈</p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="musician_list" class="m6">
+                    <ul class="line-up">
+                        <li class="list-start">
+                            <img src="img/artist6/lineup25.jpg" alt="강진 이미지 사진">
+                            <p class="h7">강진</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist6/lineup26.jpg" alt="나비맛 이미지 사진">
+                            <p class="h7">나비맛</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist6/lineup27.jpg" alt="타투 이미지 사진">
+                            <p class="h7">타투</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist6/lineup28.jpg" alt="로큰롤 라디오 이미지 사진">
+                            <p class="h7">로큰롤 라디오</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist6/lineup29.jpg" alt="지나유 이미지 사진">
+                            <p class="h7">지나유</p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="musician_list" class="m7">
+                    <ul class="line-up">
+                        <li class="list-start">
+                            <img src="img/artist7/lineup30.jpg" alt="K2 김성면 이미지 사진">
+                            <p class="h7">K2 김성면</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist7/lineup31.jpg" alt="도원경 이미지 사진">
+                            <p class="h7">도원경</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist7/lineup32.jpg" alt="에메랄드 캐슬 이미지 사진">
+                            <p class="h7">에메랄드 캐슬</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist7/lineup33.png" alt="만쥬한봉지 이미지 사진">
+                            <p class="h7">만쥬한봉지</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist7/lineup34.jpg" alt="모브닝 이미지 사진">
+                            <p class="h7">모브닝</p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="musician_list" class="m8">
+                    <ul class="line-up">
+                        <li class="list-start">
+                            <img src="img/artist8/lineup35.jpg" alt="비와이 이미지 사진">
+                            <p class="h7">비와이</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist8/lineup36.jpg" alt="에이프릴 세컨드 이미지 사진">
+                            <p class="h7">에이프릴 세컨드</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist8/lineup37.jpg" alt="피해의식 이미지 사진">
+                            <p class="h7">피해의식</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist8/lineup38.jpg" alt="티시 이노호사 이미지 사진">
+                            <p class="h7">티시 이노호사</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist8/lineup39.jpg" alt="마르멜로 이미지 사진">
+                            <p class="h7">마르멜로</p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="musician_list" class="m9">
+                    <ul class="line-up">
+                        <li class="list-start">
+                            <img src="img/artist9/lineup40.jpg" alt="DJ DOC 이미지 사진">
+                            <p class="h7">DJ DOC</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist9/lineup41.jpg" alt="아프리카 이미지 사진">
+                            <p class="h7">아프리카</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist9/lineup42.jpg" alt="악퉁 이미지 사진">
+                            <p class="h7">악퉁</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist9/lineup43.jpg" alt="정흠밴드 이미지 사진">
+                            <p class="h7">정흠밴드</p>
+                        </li>
+                        <li class="list-start">
+                            <img src="img/artist9/lineup44.jpg" alt="요요미 이미지 사진">
+                            <p class="h7">요요미</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="beer_line-up">
+        <div class="wrap2 padding100">
+            <h2 class="h1 flex flex-center">Beer Line-up</h2>
+            <div class="teb_menu">
+                <ul class="teb_list flex">
+                    <li class="slick-not-css"><img src="img/beer/logo1.png" alt="그롤쉬 맥주로고"></li>
+                    <li class="slick-not-css"><img src="img/beer/logo2.png" alt="기린이치방 맥주로고"></li>
+                    <li class="slick-not-css"><img src="img/beer/logo3.png" alt="맥스 맥주로고"></li>
+                    <li class="slick-not-css"><img src="img/beer/logo4.png" alt="밀러 맥주로고"></li>
+                    <li class="slick-not-css"><img src="img/beer/logo5.png" alt="베어비어 맥주로고"></li>
+                    <li class="slick-not-css"><img src="img/beer/logo6.png" alt="블랑 맥주로고"></li>
+                    <li class="slick-not-css"><img src="img/beer/logo7.png" alt="블루문 맥주로고"></li>
+                    <li class="slick-not-css"><img src="img/beer/logo8.png" alt="써머스비 맥주로고"></li>
+                    <li class="slick-not-css"><img src="img/beer/logo9.png" alt="아사히 맥주로고"></li>
+                    <li class="slick-not-css"><img src="img/beer/logo10.png" alt="칼리갈리박사의 밀실 맥주로고"></li>
+                    <li class="slick-not-css"><img src="img/beer/logo11.png" alt="칼스버그 맥주로고"></li>
+                    <li class="slick-not-css"><img src="img/beer/logo12.png" alt="코젤다크 맥주로고"></li>
+                    <li class="slick-not-css"><img src="img/beer/logo13.png" alt="코젤페일 맥주로고"></li>
+                    <li class="slick-not-css"><img src="img/beer/logo14.png" alt="포엑스골드 맥주로고"></li>
+                    <li class="slick-not-css"><img src="img/beer/logo15.png" alt="플레이그라운드브루어리 맥주로고"></li>
+                    <li class="slick-not-css"><img src="img/beer/logo16.png" alt="필스너우르켈 맥주로고"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="food_line-up">
+        <div class="wrap2 padding100">
+            <h2 class="h1 flex flex-center">Food Line-Up</h2>
+            <div class="teb_menu">
+                <ul class="teb_list">
+                    <li class="slick-not-css">
+                        <a href="">
+                            <img src="img/food/food1.jpg" alt="버거팩토리의 시그니쳐 버거">
+                            <span class="img_wrap"><img src="img/food/food1_logo.png" alt="버거팩토리 로고"></span>
+                        </a>
+                        <p class="h7">버거팩토리</p>
+                    </li>
+                    <li class="slick-not-css">
+                        <a href="">
+                            <img src="img/food/food2.jpg" alt="김볶스테이션 김치볶음밥">
+                            <span class="img_wrap"><img src="img/food/food2_logo.png" alt="김볶스테이션 로고"></span>
+                        </a>
+                        <p class="h7">김볶스테이션</p>
+                    </li>
+                    <li class="slick-not-css">
+                        <a href="">
+                            <img src="img/food/food3.jpg" alt="호랑이 막창">
+                            <span class="img_wrap"><img src="img/food/food3_logo.png" alt="호랑이 막창 로고"></span>
+                        </a>
+                        <p class="h7">호랑이 막창</p>
+                    </li>
+                    <li class="slick-not-css">
+                        <a href="">
+                            <img src="img/food/food4.jpg" alt="새우구이와 옥수수">
+                            <span class="img_wrap"><img src="img/food/food4_logo.png" alt="푸드머신 로고"></span>
+                        </a>
+                        <p class="h7">이거레알 반박불가</p>
+                    </li>
+                    <li class="slick-not-css">
+                        <a href="">
+                            <img src="img/food/food5.jpg" alt="치빗꼬야끼">
+                        </a>
+                        <p class="h7">치빗꼬야끼</p>
+                    </li>
+                    <li class="slick-not-css">
+                        <a href="">
+                            <img src="img/food/food6.jpg" alt="오징어 사우나">
+                            <span class="img_wrap"><img src="img/food/food6_logo.png" alt="간식여왕 로고"></span>
+                        </a>
+                        <p class="h7">간식여왕</p>
+                    </li>
+                    <li class="slick-not-css">
+                        <a href="">
+                            <img src="img/food/food7.jpg" alt="카우보이의 갈비">
+                            <span class="img_wrap"><img src="img/food/food7_logo.png" alt="카우보이 로고"></span>
+                        </a>
+                        <p class="h7">갈비와닭발의조화</p>
+                    </li>
+                    <li class="slick-not-css">
+                        <a href="">
+                            <img src="img/food/food8.jpg" alt="바셀바베큐">
+                            <span class="img_wrap"><img src="img/food/food8_logo.png" alt="바살 비비큐 로고"></span>
+                        </a>
+                        <p class="h7">바셀바베큐</p>
+                    </li>
+                    <li class="slick-not-css">
+                        <a href="">
+                            <img src="img/food/food9.jpg" alt="모닝딜라이트의 시그니쳐 또띠아">
+                            <span class="img_wrap"><img src="img/food/food9_logo.png" alt="모닝딜라이트 로고"></span>
+                        </a>
+                        <p class="h7">모닝딜라이트</p>
+                    </li>
+                    <li class="slick-not-css">
+                        <a href="">
+                            <img src="img/food/food10.jpg" alt="동경꼬치">
+                            <span class="img_wrap"><img src="img/food/food10_logo.png" alt="베이징쿡 로고"></span>
+                        </a>
+                        <p class="h7">동경꼬치</p>
+                    </li>
+                    <li class="slick-not-css">
+                        <a href="">
+                            <img src="img/food/food11.jpg" alt="삼겹살 야채말이">
+                        </a>
+                        <p class="h7">삼겹살 야채말이</p>
+                    </li>
+                    <li class="slick-not-css">
+                        <a href="">
+                            <img src="img/food/food12.jpg" alt="쉬림프 스테이크">
+                        </a>
+                        <p class="h7">쉬림프 스테이크</p>
+                    </li>
+                    <li class="slick-not-css">
+                        <a href="">
+                            <img src="img/food/food13.jpg" alt="곱창과 파무침">
+                        </a>
+                        <p class="h7">온더테이블</p>
+                    </li>
+                    <li class="slick-not-css">
+                        <a href="">
+                            <img src="img/food/food14.jpg" alt="쉬림프박스">
+                        </a>
+                        <p class="h7">쉬림프박스</p>
+                    </li>
+                    <li class="slick-not-css">
+                        <a href="">
+                            <img src="img/food/food15.jpg" alt="소떡소떡">
+                        </a>
+                        <p class="h7">패밀리 꼬치</p>
+                    </li>
+                    <li class="slick-not-css">
+                        <a href="">
+                            <img src="img/food/food16.jpg" alt="대구막창">
+                        </a>
+                        <p class="h7">대구막창</p>
+                    </li>
+                </ul>
+                <ul class="teb_list">
+                    <li class="slick-not-css">
+                        <a href="">
+                            <img src="img/food/food17.jpg" alt="">
+                            <span class="img_wrap"><img src="img/food/food17_logo.png" alt=""></span>
+                        </a>
+                        <p class="h7">머스테이크</p>
+                    </li>
+                    <li class="slick-not-css">
+                        <a href="">
+                            <img src="img/food/food18.jpg" alt="">
+                            <span class="img_wrap"><img src="img/food/food18_logo.png" alt=""></span>
+                        </a>
+                        <p class="h7">필살샌드위치</p>
+                    </li>
+                    <li class="slick-not-css">
+                        <a href="">
+                            <img src="img/food/food19.jpg" alt="">
+                        </a>
+                        <p class="h7">베이징쿡</p>
+                    </li>
+                    <li class="slick-not-css">
+                        <a href="">
+                            <img src="img/food/food20.jpg" alt="">
+                            <span class="img_wrap"><img src="img/food/food20_logo.png" alt=""></span>
+                        </a>
+                        <p class="h7">야부리식당</p>
+                    </li>
+                    <li class="slick-not-css">
+                        <a href="">
+                            <img src="img/food/food21.jpg" alt="">
+                        </a>
+                        <p class="h7">Chapchaf(찹찹)</p>
+                    </li>
+                    <li class="slick-not-css">
+                        <a href="">
+                            <img src="img/food/food2.jpg" alt="">
+                        </a>
+                        <p class="h7">오산 누들누들</p>
+                    </li>
+                </ul>
+                <ul class="txt_list flex">
+                    <li>
+                        <p class="h6">새우Bar</p>
+                    </li>
+                    <li>
+                        <p class="h6">세계음식관</p>
+                    </li>
+                    <li>
+                        <p class="h6">송도야다이</p>
+                    </li>
+                    <li>
+                        <p class="h6">미스터와우</p>
+                    </li>
+                    <li>
+                        <p class="h6">요호컴퍼니</p>
+                    </li>
+                    <li>
+                        <p class="h6">숯불바베큐</p>
+                    </li>
+                    <li>
+                        <p class="h6">컬투페스티벌</p>
+                    </li>
+                    <li>
+                        <p class="h6">고미락 닭강정</p>
+                    </li>
+                    <li>
+                        <p class="h6">대디피자</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="timetable">
+        <div class="wrap flex flex-align-center flex-column padding50">
+            <h2 class="h1">Time Table</h2>
+            <div class="schedule_box"><img src="img/schedule.jpg" alt="맥주축제 시간표"></div>
+        </div>
+    </section>
+    <section id="map">
+        <div class="wrap padding100">
+            <h2 class="hide">오시는 길</h2>
+            <div class="map_address">
+                <img src="img/ico_gps.png" alt="맵 아이콘">
+                <h3 class="h1">Map</h3>
+                <span></span>
+                <address>
+                    <p class="h7">인천광역시 센트럴로 350 (송도동 26-1)<br>송도달빛축제공원</p>
+                    <p class="p eng_p">350, Central-ro, Yeonsu-gu, Incheon, Korea</p>
+                </address>
+            </div>
+            <div class="map_imgbox">
+                <div class="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.330748676451!2d126.63341601560795!3d37.40565654108229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b779432cbecc7%3A0x9b38cc650bb7b441!2z7Iah64-E64us67mb7LaV7KCc6rO17JuQ!5e0!3m2!1sko!2skr!4v1525356267995" style="border: none;"></iframe>
+                </div>
+            </div>
+            <div class="public">
+                <div>
+                    <h3 class="h6"><i class="fa-solid fa-train" style="color: #436884;"></i>지하철</h3>
+                    <address>
+                        <p class="p kor_p">인천지하철 1호선 송도국제업무지구역 5번출구</p>
+                        <p class="p eng_p">International Business District Station,<br>Incheon Subway Line1, Exit 5</p>
+                    </address>
+                </div>
+                <div>
+                    <h3 class="h6"><i class="fa-solid fa-bus" style="color: #436884;"></i>버스</h3>
+                    <address>
+                        <p class="p kor_p">국제업무지구역 정류장 (간선 6-2, 급행간선 908)</p>
+                        <p class="p eng_p">International Business District Station Bus Stop,<br>No 6-2, No 908</p>
+                    </address>
+                </div>
+                <div>
+                    <h3 class="h6"><i class="fa-solid fa-location-dot" style="color: #436884;"></i>오시는 길 안내</h3>
+                    <address>
+                        <p class="p kor_p">인천1호선 국제업무지구역 하차</p>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="enjoy">
+        <div class="wrap_full padding100">
+            <div class="wrap2">
+                <h2 class="h1">Are you ready to enjoy?</h2>
+            </div>
+            <div class="wrapper">
+                <ul class="photobanner">
+                    <li>
+                        <img class="first" src="img/gallery/gallery_img1.jpg" alt="맥주캔을 들고 찍은 사진" />
+                        <p class="h7">#맥주는 못참지 ㅋㅋ</p>
+                    </li>
+                    <li>
+                        <img src="img/gallery/gallery_img2.jpg" alt="맥주축제 현장의 불꽃놀이 사진" />
+                    </li>
+                    <li>
+                        <img src="img/gallery/gallery_img3.jpg" alt="맥주축제 현장에서 기념사진을 촬영하는 사람들" />
+                        <p class="h7">#외국인들도 함께하는 축제!</p>
+                    </li>
+                    <li>
+                        <img src="img/gallery/gallery_img4.jpg" alt="맥주축제 현장의 야외 테이블" />
+                        <p class="h7">#송도에 이런곳이? 벌써부터 기대!</p>
+                    </li>
+                    <li>
+                        <img src="img/gallery/gallery_img5.jpg" alt="맥주축제 현장의 EDM파티" />
+                        <p class="h7">#저녁에는_EDM 파티와_불꽃놀이</p>
+                    </li>
+                    <li>
+                        <img src="img/gallery/gallery_img6.jpg" alt="맥주축제 현장에서 건배하는 사람들" />
+                        <p class="h7">#날씨는 선선_맥주는 시원_축제는 화끈</p>
+                    </li>
+                    <li>
+                        <img src="img/gallery/gallery_img7.jpg" alt="노을이 지고 있는 맥주축제 현장" />
+                        <p class="h7"># 노을마저_예쁨_인스타각</p>
+                    </li>
+                    <li>
+                        <img src="img/gallery/gallery_img8.jpg" alt="피날레 불꽃놀이의 맥주축제 현장" />
+                        <p class="h7">#맥주도 불꽃놀이도 놓칠 수 없어</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="community">
+        <div class="wrap2 padding100">
+            <h2 class="hide">커뮤니티</h2>
+            <ul class="flex flex-align-center text-center">
+                <li>
+                    <a href="">
+                        <h3 class="h3">Notice</h3>
+                        <p class="h7">공지사항</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <h3 class="h3">News</h3>
+                        <p class="h7">보도자료</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <h3 class="h3">FAQ</h3>
+                        <p class="h7">자주하는 질문</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="wrap2 padding50">
+            <p class="p">MAIL | <a href="mailto:songdobeerfest@ifm.kr">songdobeerfest@ifm.kr</a></p>
+            <p class="p">Phone | 032-830-1000</p>
+            <p class="p">&copy; 2024 <span class="logo">SongdoBeer</span></p>
+        </div>   
+    </footer>
+</body>
+</html>

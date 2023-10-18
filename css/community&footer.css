@@ -1,0 +1,53 @@
+#community{
+    
+}
+#community .wrap2{
+    
+}
+#community .wrap2 ul{
+
+  justify-content: space-around;
+}
+#community .wrap2 ul li{
+  width: calc(100% / 3);
+}
+#community .wrap2 ul li:nth-child(2){
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+}
+#community .wrap2 ul li a{
+
+  flex-direction: column-reverse;
+  display: flex;
+}
+#community .wrap2 ul li a h3{
+
+  line-height: 1.8;
+  color: #436884;
+}
+#community .wrap2 ul li a p{
+    
+  letter-spacing: 2px;
+}
+/* 푸터 */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+footer .wrap2{
+  
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+footer p{
+  
+}
+footer a {
+  color: #fff;
+}
+footer .logo {
+  font-weight: bold;
+}

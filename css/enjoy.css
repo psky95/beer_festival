@@ -1,0 +1,60 @@
+#enjoy{
+
+}
+#enjoy .wrap_full{
+  background: #141f32;
+}
+#enjoy .wrap_full div{
+
+}
+#enjoy .wrap_full .wrap2{
+  
+}
+#enjoy .wrap_full div h2{
+  margin-bottom: 10rem;
+  color: #fff;
+  text-shadow: #eee 1px 0px 8px;
+}
+#enjoy .wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+#enjoy .photobanner {
+	position: relative;
+	height: 100%;
+	margin-bottom: 30px;
+	display: flex;
+	width: 100%;
+}
+#enjoy .photobanner img {
+  margin: 0px 4.5rem 2rem 4.5rem;
+  box-shadow: #eee 1px 1px 7px;
+}
+
+#enjoy .photobanner {
+  animation: bannermove 50s linear infinite alternate-reverse;
+}
+#enjoy .photobanner li{
+  
+}
+#enjoy .photobanner li:nth-child(odd){
+  
+  transform: translateY(0.5rem);
+}
+#enjoy .photobanner li:nth-child(even){
+  
+  transform: translateY(5rem);
+}
+#enjoy .photobanner li p{
+  
+  text-align: center;
+  color: #fff;
+}
+@keyframes bannermove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -2900px;
+  }
+}

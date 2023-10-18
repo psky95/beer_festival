@@ -1,0 +1,90 @@
+#title { 
+  height: 100%;
+  background-image: url(../img/title.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 870px;
+}
+#title .wrap {
+  
+}
+#title .wrap h1 {
+  
+}
+#title .wrap .title-head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#title .wrap .title-head img {
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#title .wrap .title-head time {
+  
+  color: #1b659a;
+  order: 1;
+}
+#title .wrap .title-box{
+  
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  width: 463px;
+}
+#title .wrap .title-box h2 {
+  color: #1b659a;
+  order: 2;
+  line-height: 1.8;
+  margin-top: 2rem;
+}
+#title .wrap .title-box h3 {
+  
+  order: 3;
+  color: #5D95BC;
+}
+#title .wrap .title-box .title-link {
+  
+  order: 4;
+  display: flex;
+  margin-top: 4.5rem;
+  justify-content: space-between;
+}
+#title .wrap .title-box .title-link a {
+  width: 220px;
+  height: 66px;
+  transition: 0.3s ease-out;
+  border: none;
+}
+#title .wrap .title-box .title-link a:nth-child(1):hover{
+  background-color: #f08c68;
+  color: white;
+}
+#title .wrap .title-box .title-link a:nth-child(2){
+  position: relative;
+}
+#title .wrap .title-box .title-link a:nth-child(2)::before{
+  content: "";
+  width: 101%;
+  height: 101%;
+  position: absolute;
+  background-image: linear-gradient(to right, #405DE6, #FD5D87);
+  border-radius: 3.3rem;
+  opacity: 0;
+  transition: 0.3s ease-out;
+  border: none;
+  overflow: hidden;
+}
+#title .wrap .title-box .title-link a:nth-child(2):hover::before{
+  opacity: 1;
+}
+#title .wrap .title-box .title-link a:nth-child(2):hover{
+  color: white;
+}
+#title .wrap .title-box .title-link a span {
+  
+  z-index: 1;
+}
