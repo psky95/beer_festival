@@ -7,7 +7,7 @@
 
 
 ## 리뉴얼 웹사이트 링크 & 스크린샷
-클론코딩페이지 url : [https://psky95.github.io/triple/  ](https://psky95.github.io/beer_festival/)  
+리뉴얼 페이지 url : [https://psky95.github.io/triple/  ](https://psky95.github.io/beer_festival/)  
 ![after](https://github.com/psky95/beer_festival/assets/142555226/4f847b2d-dfc5-4f3b-92fa-ec493d755a4e)
 
 
