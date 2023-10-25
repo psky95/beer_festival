@@ -38,36 +38,36 @@ html{
   background-position-y: 10%;
 }
 .padding50{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .padding100{
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .paddingB50{
-  padding-bottom: 5rem;
+  padding-bottom: 50px;
 }
 .paddingB100{
-  padding-bottom: 10rem;
+  padding-bottom: 100px;
 }
 .paddingT50{
-  padding-top: 5rem;
+  padding-top: 50px;
 }
 .paddingT100{
-  padding-top: 10rem;
+  padding-top: 100px;
 }
 .marginB50{
-  margin-bottom: 5rem;
+  margin-bottom: 50px;
 }
 .marginB100{
-  margin-bottom: 10rem;
+  margin-bottom: 100px;
 }
 .marginT50{
-  margin-top: 5rem;
+  margin-top: 50px;
 }
 .marginT100{
-  margin-top: 10rem;
+  margin-top: 100px;
 }
 .flex{
   display: flex;
@@ -146,7 +146,7 @@ font-size: 0;
   width: 90px;
   display: flex;
   justify-content: space-evenly;
-  font-size: 14px;
+  font-size: 1.4rem;
   box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.2);
   padding-left: 10px;
 }
