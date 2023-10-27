@@ -7,8 +7,7 @@
 #musician_line-up .wrap2 h2{  
   color: #f08c68;
 }
-#musician_line-up .wrap2 h2::before{
-  
+#musician_line-up .wrap2 h2::before{ 
   background-image: url(../img/mic.svg);
 }
 #musician_line-up .wrap2 .teb_menu ul.teb_list {  
@@ -46,9 +45,6 @@
 #musician_line-up .wrap2 .teb_img ul.line-up li {  
   text-align: center;
 }
-#musician_line-up .wrap2 .teb_img ul.line-up li.list-start{
-  
-}
 #musician_line-up .wrap2 .teb_img ul.line-up li img {
   border-radius: 10px;
   transform: scale(0.93);
@@ -64,7 +60,6 @@
   top: 40%;
 }
 #musician_line-up .wrap2 .teb_img ul.line-up .slick-dots{
-  
   bottom: -20px;
 }
 .teb_img .m2, .teb_img .m3, .teb_img .m4, .teb_img .m5, .teb_img .m6, .teb_img .m7, .teb_img .m8, .teb_img .m9 {
