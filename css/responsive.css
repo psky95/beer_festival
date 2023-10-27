@@ -195,8 +195,7 @@
 
   }
   #musician_line-up .wrap2 .teb_img ul.line-up li img{
-    
-  scale: 1;
+    transform: scale(1);
   }
   #musician_line-up h2::before, 
   #beer_line-up h2::before, 
