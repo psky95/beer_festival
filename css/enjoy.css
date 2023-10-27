@@ -1,14 +1,5 @@
-#enjoy{
-
-}
 #enjoy .wrap_full{
   background: #141f32;
-}
-#enjoy .wrap_full div{
-
-}
-#enjoy .wrap_full .wrap2{
-  
 }
 #enjoy .wrap_full div h2{
   margin-bottom: 10rem;
@@ -34,19 +25,13 @@
 #enjoy .photobanner {
   animation: bannermove 50s linear infinite alternate-reverse;
 }
-#enjoy .photobanner li{
-  
-}
 #enjoy .photobanner li:nth-child(odd){
-  
   transform: translateY(0.5rem);
 }
 #enjoy .photobanner li:nth-child(even){
-  
   transform: translateY(5rem);
 }
 #enjoy .photobanner li p{
-  
   text-align: center;
   color: #fff;
 }
