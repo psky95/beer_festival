@@ -51,7 +51,7 @@
 }
 #musician_line-up .wrap2 .teb_img ul.line-up li img {
   border-radius: 10px;
-  scale: 0.93;
+  transform: scale(0.93);
 }
 #musician_line-up .wrap2 .teb_img ul.line-up li p {
   font-weight: 400;
