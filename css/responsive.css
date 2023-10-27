@@ -1,14 +1,13 @@
 @media screen and (max-width:460px){
   html, body {
-        overflow-x: hidden;
+    overflow-x: hidden;
   }
-/*  공통  */
+  /*  공통  */
   .wrap, .wrap2{
     padding: 5rem 1.5rem;
   }
   .h1{
-    
-  font-size: 4rem;
+    font-size: 4rem;
   }
   .h2{
     font-size: 2rem;
@@ -21,22 +20,22 @@
   }
 /*  타이틀  */
   #title{
-  background-position: left;
-  background-size: cover;
-  background-image: url(../img/bnnMain03.jpg);
+    background-position: left;
+    background-size: cover;
+    background-image: url(../img/bnnMain03.jpg);
   }
   #title .wrap{ 
-  padding: 1.5rem 1.5rem;
-  height: 100%;
+    padding: 1.5rem 1.5rem;
+    height: 100%;
   }
   #title .wrap .title-head{
-  height: 100%;
-  align-items: center;
+    height: 100%;
+    align-items: center;
   }
   #title .wrap .title-head img{
-  width: 100px;
-  height: 70px;
-  transform: translateX(-160px);
+    width: 100px;
+    height: 70px;
+    transform: translateX(-160px);
   }
   #title .wrap .title-box{
     margin-top: 15rem;
@@ -64,124 +63,106 @@
     text-shadow: 1px 1px 6px #fff;
   }
   #title .wrap .title-head time >span{
-  font-size: 2rem;
+    font-size: 2rem;
   }
   #title .wrap .title-box .title-link{
-  margin-top: 3.5rem;
-  justify-content: center;
-  gap: 2rem;
-  order: 4;
+    margin-top: 3.5rem;
+    justify-content: center;
+    gap: 2rem;
+    order: 4;
   }
   #title .wrap .title-box .title-link a{  
-  width: 150px;
-  height: 50px;
-  box-shadow: -0.5px -1px 4px rgba(230,193,179,.8);
+    width: 150px;
+    height: 50px;
+    box-shadow: -0.5px -1px 4px rgba(230,193,179,.8);
   }
   #title .wrap .title-box .title-link a:nth-child(1){
-  background-color: #f08c68;
-  color: white;
+    background-color: #f08c68;
+    color: white;
   }
   #title .wrap .title-box .title-link a:nth-child(2){ 
-  background-image: linear-gradient(to right, #405DE6, #FD5D87);
-  border-radius: 3.3rem;
-  color: #fff;
+    background-image: linear-gradient(to right, #405DE6, #FD5D87);
+    border-radius: 3.3rem;
+    color: #fff;
   }
   #title .wrap .title-box .title-link a:nth-child(2)::before{
-  all: unset;
+    all: unset;
   }
   #title .wrap .title-box .title-link a span{
-    
-  font-size: 1.4rem;
+    font-size: 1.4rem;
   }
-/*  인트로  */
+  /*  인트로  */
   #intro .wrap2 .intro-title{
-    
-  width: 100%;
+    width: 100%;
   }
   #intro .wrap2 .intro-title h2{ 
     font-size: 5rem;
   }
   #intro .wrap2 .intro-title p.since{
-    
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
   }
   #intro .wrap2 .intro-title h3{
-    
-  margin-top: 5rem;
+    margin-top: 5rem;
   }
   #intro .wrap2 .intro-img{  
     display: none;
   }
-/*  컨텐츠 영역  */
+  /*  컨텐츠 영역  */
   #content{
     min-height: initial;
   }
-  #content .content-item .content-imgbox .content-hbox{
-    
-  }
   #content .content-item .content-imgbox .content-hbox h2{
-    
-  margin: 1rem 0;
-  font-size: 1.8rem;
+    margin: 1rem 0;
+    font-size: 1.8rem;
   }
-  #content .content-item .content-imgbox .content-hbox span{
-    
-  height: 25px;
-  margin: 5px auto;
+  #content .content-item .content-imgbox .content-hbox span{ 
+    height: 25px;
+    margin: 5px auto;
   }
   #content .content-item .content-imgbox .content-hbox p:nth-of-type(2){
-    
-  font-size: 1.4rem;
-  margin-top: 1rem;
+    font-size: 1.4rem;
+    margin-top: 1rem;
   }
   #content2 .wrap{
-    
-  justify-content: center;
-  flex-direction: column;
-  gap: 5rem;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
   }
   #content2 .wrap a:nth-child(1),
   #content2 .wrap a:nth-child(2),
-  #content2 .wrap a:nth-child(3){
-    
-  transform: initial;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+  #content2 .wrap a:nth-child(3){ 
+    transform: initial;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
-  #content2 .wrap img{
-    
-  width: 400px;
-  margin-bottom: 1rem;
+  #content2 .wrap img{ 
+    width: 400px;
+    margin-bottom: 1rem;
   }
   #content2 .wrap p{
-    
-  font-size: 1.6rem;
+    font-size: 1.6rem;
   }
   /*  라인업  */
-  #musician_line-up .wrap2{
-    
-  padding-top: 5rem;
+  #musician_line-up .wrap2{ 
+    padding-top: 5rem;
   }
   #musician_line-up .wrap2 .teb_menu ul.teb_list{
-    
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0px 6.6rem;
-  gap: 15px;
-  margin: 5rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 6.6rem;
+    gap: 15px;
+    margin: 5rem 0;
   }
   #musician_line-up .wrap2 .teb_menu ul.teb_list li{
-    
-  border-radius: unset;
-  flex-wrap: wrap;
-  display: flex;
+    border-radius: unset;
+    flex-wrap: wrap;
+    display: flex;
   }
-  #musician_line-up .wrap2 .teb_menu ul.teb_list li a{
-    
-  border-radius: unset;
-  width: 75px;
-  height: 75px;
+  #musician_line-up .wrap2 .teb_menu ul.teb_list li a{ 
+    border-radius: unset;
+    width: 75px;
+    height: 75px;
   }
   #beer_line-up .wrap2 .teb_menu ul.teb_list{
     margin: 0;
@@ -191,9 +172,6 @@
   #musician_line-up .wrap2 .teb_img ul.line-up .slick-list{
     overflow: initial;
   }
-  #musician_line-up .wrap2 .teb_img ul.line-up li.list-start{
-
-  }
   #musician_line-up .wrap2 .teb_img ul.line-up li img{
     transform: scale(1);
   }
@@ -201,124 +179,105 @@
   #beer_line-up h2::before, 
   #food_line-up h2::before, 
   #timetable h2::before{
-  width: 4rem;
-  height: 4rem;
-  margin-right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
   }
   #beer_line-up{
     padding-bottom: 7rem;
   }
   #beer_line-up .wrap2 .teb_menu ul.teb_list li img{
-    
-  width: 90%;
-  height: 90%;
+    width: 90%;
+    height: 90%;
   }
   #food_line-up .wrap2 .teb_menu ul.teb_list li a{
-  width: 75%;
-  height: 75%;
+    width: 75%;
+    height: 75%;
   }
   #food_line-up .wrap2 .teb_menu ul.teb_list li img{
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
   }
   #food_line-up .wrap2 .teb_menu ul.teb_list li .img_wrap{
     display: none;
   }
   #food_line-up .wrap2 .teb_menu ul.teb_list{
-  margin: 5rem 0;
-  padding: 5rem 0 5rem 0;
-  margin-top: 0;
+    margin: 5rem 0;
+    padding: 5rem 0 5rem 0;
+    margin-top: 0;
   }
   #food_line-up .wrap2 .teb_menu .txt_list{
-  padding: 2rem 0;
-  display: flex;
-  flex-wrap: wrap;
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
   }
-  #food_line-up .wrap2 .teb_menu .txt_list li p{
-    
-  font-size: 1.5rem;
+  #food_line-up .wrap2 .teb_menu .txt_list li p{ 
+    font-size: 1.5rem;
   }
   /* 타임테이블 */
-  #timetable .wrap h2{
-    
-  padding-bottom: 3rem;
+  #timetable .wrap h2{ 
+    padding-bottom: 3rem;
   }
   #timetable .wrap .schedule_box{
-    
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
   }
   #timetable .wrap .schedule_box img{
     width: 100%;
     height: 100%;
   }
-  #map .wrap .map_address{
-    
-  padding: 0;
+  #map .wrap .map_address{ 
+    padding: 0;
   }
-  #map .wrap .map_address img{
-    
-  width: 45px;
-  height: 64px;
-  margin-bottom: 1rem;
+  #map .wrap .map_address img{ 
+    width: 45px;
+    height: 64px;
+    margin-bottom: 1rem;
   }
-  #map .wrap .map_address > span{
-    
-  height: 3rem;
-  margin: 1rem 0 1rem 1rem;
+  #map .wrap .map_address > span{  
+    height: 3rem;
+    margin: 1rem 0 1rem 1rem;
   }
-  #map .wrap .map_imgbox{
-    
-  padding: 0 0 2rem 3rem;
+  #map .wrap .map_imgbox{  
+    padding: 0 0 2rem 3rem;
   }
   #map .wrap .map_imgbox .maps iframe{
-    
-  height: 120%;
+    height: 120%;
   }
   #map .wrap .map_address > address p:nth-child(1){
-    
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
   }
   #map .wrap .map_address > address p{
-    
-  line-height: 1.6;
+    line-height: 1.6;
   }
   #map .wrap .public{
-    
-  padding: 4rem 0 0;
-  display: initial;
+    padding: 4rem 0 0;
+    display: initial;
   }
-  #map .wrap .public > div:not(:last-child){
-    
-  padding-bottom: 3rem;
+  #map .wrap .public > div:not(:last-child){ 
+    padding-bottom: 3rem;
   }
   #map .wrap .public > div h3{
-    
-  padding-bottom: .5rem;
+    padding-bottom: .5rem;
   }
   /* 엔조이 영역 */
   #enjoy .wrap_full{
-    
-  padding-top: 0;
-  padding-bottom: 5rem;
+    padding-top: 0;
+    padding-bottom: 5rem;
   }
-  #enjoy .wrap_full div h2{
-    
-  margin-bottom: 1rem;
+  #enjoy .wrap_full div h2{  
+    margin-bottom: 1rem;
   }
-  #enjoy .photobanner img{
-    
-  width: 263px;
-  height: 170px;
-  margin: 0px 2.5rem 2rem 2.5rem;
+  #enjoy .photobanner img{ 
+    width: 263px;
+    height: 170px;
+    margin: 0px 2.5rem 2rem 2.5rem;
   }
-  #enjoy .photobanner li:nth-child(2n){
-    
-  transform: translateY(3rem);
+  #enjoy .photobanner li:nth-child(2n){ 
+    transform: translateY(3rem);
   }
-  #enjoy .photobanner{
-    
-  animation: bannermove 25s linear infinite alternate-reverse;
+  #enjoy .photobanner{  
+    animation: bannermove 25s linear infinite alternate-reverse;
   }
   @keyframes bannermove {
     from {
@@ -328,21 +287,17 @@
       left: -1450px;
     }
   }
-  #community .wrap2{
-    
-  padding: 3rem 1.5rem;
+  #community .wrap2{ 
+    padding: 3rem 1.5rem;
   }
   #community .wrap2 ul li a h3{
-    
-  font-size: 3rem;
+    font-size: 3rem;
   }
-  footer{
-    
-  padding: 0;
+  footer{  
+    padding: 0;
   }
-  footer .wrap2{
-    
-  flex-direction: column;
-  padding: 3rem 1.5rem;
+  footer .wrap2{ 
+    flex-direction: column;
+    padding: 3rem 1.5rem;
   }
 }
