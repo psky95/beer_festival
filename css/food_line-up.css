@@ -2,79 +2,73 @@
   background-color: #f8d8c5;
 }
 #food_line-up .wrap2 h2{  
-    color: #f08c68;
+  color: #f08c68;
 }
 #food_line-up .wrap2 h2::before{
-    
-    background-image: url(../img/food.svg);
+  background-image: url(../img/food.svg);
 }
 #food_line-up .wrap2 .teb_menu ul.teb_list {  
-    margin: 7rem 0;
-    padding: 7rem 0 5rem 0;
+  margin: 7rem 0;
+  padding: 7rem 0 5rem 0;
 }
 #food_line-up .wrap2 .teb_menu ul.teb_list:nth-child(2){   
-    border-top: 3px dashed #D06740;
-}
-#food_line-up .wrap2 .teb_menu ul.teb_list:nth-child(2) li{
-    
-}
-#food_line-up .wrap2 .teb_menu ul.teb_list li {   
+  border-top: 3px dashed #D06740;
 }
 #food_line-up .wrap2 .teb_menu ul.teb_list li a{    
-    position: relative;
-    border: 8px solid #f4c5a8;
-    border-radius: 50%;
+  position: relative;
+  border: 8px solid #f4c5a8;
+  border-radius: 50%;
 }
-#food_line-up .wrap2 .teb_menu ul.teb_list li p{ 
-    text-align: center;
-    line-height: 2;
-    margin-top: 2rem;
-    font-weight: 600;
+#food_line-up .wrap2 .teb_menu ul.teb_list li p{
+  text-align: center;
+  line-height: 2;
+  margin-top: 2rem;
+  font-weight: 600;
 }
 #food_line-up .wrap2 .teb_menu ul.teb_list li img{    
-    border-radius: 50%;
+  border-radius: 50%;
 }
 #food_line-up .wrap2 .teb_menu ul.teb_list li .img_wrap{   
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    background: #fff;
-    transition: 0.1s all ease;
-    border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background: #fff;
+  transition: 0.1s all ease;
+  border-radius: 50%;
 }
 #food_line-up .wrap2 .teb_menu ul.teb_list li .img_wrap>img{ 
-    vertical-align: middle;
-    text-align: center;
-    margin: 0 auto;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 auto;
 }
 #food_line-up .wrap2 .teb_menu ul.teb_list li:hover .img_wrap {
-    opacity: 1;
+  opacity: 1;
 }
 #food_line-up .wrap2 .teb_menu .txt_list{  
-    border-top: 3px dashed #D06740;
-    border-bottom: 3px dashed #D06740;
-    padding: 5rem 0;
-    row-gap: 4rem;
+  border-top: 3px dashed #D06740;
+  border-bottom: 3px dashed #D06740;
+  padding: 5rem 0;
+  row-gap: 4rem;
 }
 #food_line-up .wrap2 .teb_menu .txt_list li{   
-    width: 25%;
+  width: 25%;
 }
 #food_line-up .wrap2 .teb_menu .txt_list li p{   
-    color: #f08c68;
-    text-align: center;
-    font-weight: 700;
+  color: #f08c68;
+  text-align: center;
+  font-weight: 700;
 }
 #food_line-up .wrap2 .teb_menu ul.teb_list .slick-prev, 
 #food_line-up .wrap2 .teb_menu ul.teb_list .slick-next{    
-    top: 46%;
+  top: 46%;
 }
 #food_line-up .wrap2 .teb_menu ul.teb_list:nth-child(2) .slick-prev{
-    left: -57px;
+  left: -57px;
 }
 #food_line-up .wrap2 .teb_menu ul.teb_list:nth-child(2) .slick-next{
-    right: -37px;
+  right: -37px;
 }
 #food_line-up .wrap2 .teb_menu .slick-dots{  
-    bottom: 0px;
+  bottom: 0px;
 }
