@@ -6,29 +6,20 @@
   background-size: cover;
   min-height: 870px;
 }
-#title .wrap {
-  
-}
-#title .wrap h1 {
-  
-}
 #title .wrap .title-head {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 #title .wrap .title-head img {
-  
   background-size: contain;
   background-repeat: no-repeat;
 }
 #title .wrap .title-head time {
-  
   color: #1b659a;
   order: 1;
 }
 #title .wrap .title-box{
-  
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -42,12 +33,10 @@
   margin-top: 2rem;
 }
 #title .wrap .title-box h3 {
-  
   order: 3;
   color: #5D95BC;
 }
 #title .wrap .title-box .title-link {
-  
   order: 4;
   display: flex;
   margin-top: 4.5rem;
