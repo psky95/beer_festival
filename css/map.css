@@ -1,48 +1,32 @@
-#map {
-  
-}
 #map .wrap {
-  
   display: flex;
   flex-wrap: wrap;
 }
-#map .wrap h2 {
-  
-}
 #map .wrap .map_address {
-  
   width: calc(100% - 65%);
   padding-left: 9.5rem;
   box-sizing: border-box;
 }
 #map .wrap .map_address img {
-  
   margin-bottom: 2rem;
 }
 #map .wrap .map_address > h3 {
-  
   color: #436884;
 }
 #map .wrap .map_address > span{
-  
   display: block;
   width: 1px;
   height: 70px;
   margin: 3rem 0 3rem 3rem;
   background: black;
 }
-#map .wrap .map_address > address {
-  
-}
 #map .wrap .map_address > address p {  
   line-height: 2;
 }
 #map .wrap .map_address > address p:nth-child(1){
-  
   margin-bottom: 2rem;
 }
 #map address .kor_p{
-  
   line-height: 2;
 }
 #map address .eng_p{
@@ -55,37 +39,24 @@
   padding-right: 9rem;
 }
 #map .wrap .map_imgbox .maps {
-  
   width: 100%;
   height: 100%;
 }
 #map .wrap .map_imgbox .maps iframe {
-  
   height: 540px;
   width: 100%;
 }
 #map .wrap .public {
-  
   display: flex;
   width: 100%;
   box-sizing: border-box;
   padding: 5rem 9rem 0 9.5rem;
   gap: 11.6rem;
 }
-#map .wrap .public > div {
-  
-}
 #map .wrap .public > div h3 {
   color: #436884;
   padding-bottom: 1.5rem;
 }
 #map .wrap .public > div h3 i{
-  
   margin-right: 0.8rem;
-}
-#map .wrap .public > div address {
-  
-}
-#map .wrap .public > div address p {
-  
 }
