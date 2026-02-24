@@ -11,7 +11,7 @@
   margin: 7rem 0;
   padding: 7rem 0 5rem 0;
 }
-#food_line-up .wrap2 .teb_menu ul.teb_list:nth-child(2){   
+#food_line-up .wrap2 .teb_menu ul.food-list-secondary{   
   border-top: 3px dashed #D06740;
 }
 #food_line-up .wrap2 .teb_menu ul.teb_list li a{    
@@ -63,10 +63,10 @@
 #food_line-up .wrap2 .teb_menu ul.teb_list .slick-next{    
   top: 46%;
 }
-#food_line-up .wrap2 .teb_menu ul.teb_list:nth-child(2) .slick-prev{
+#food_line-up .wrap2 .teb_menu ul.food-list-secondary .slick-prev{
   left: -57px;
 }
-#food_line-up .wrap2 .teb_menu ul.teb_list:nth-child(2) .slick-next{
+#food_line-up .wrap2 .teb_menu ul.food-list-secondary .slick-next{
   right: -37px;
 }
 #food_line-up .wrap2 .teb_menu .slick-dots{  
