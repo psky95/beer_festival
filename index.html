@@ -31,109 +31,11 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- 제이쿼리 연결 -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script></script> 
     <!-- 슬릭 js -->
     <link rel="stylesheet" type="text/css" href="slick/slick.css">
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <script src="slick/slick.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#beer_line-up .wrap2 .teb_menu ul.teb_list").slick({
-                autoplay: true,
-                autoplaySpeed: 3500,
-                slidesToShow: 4,
-                slidesToScroll: 4,
-                speed: 1500,
-                responsive: [{
-                    breakpoint: 461,
-                    settings: {
-                    arrows: false,
-                    autoplay: false,
-                    swipe: true,
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: false
-                    }
-                }]
-            });
-            $("#food_line-up .wrap2 .teb_menu ul.teb_list:nth-child(1)").slick({
-                autoplay: true,
-                autoplaySpeed: 3500,
-                slidesToShow: 4,
-                slidesToScroll: 4,
-                speed: 1500,
-                responsive: [{
-                    breakpoint: 461,
-                    settings: {
-                    arrows: false,
-                    autoplay: false,
-                    swipe: true,
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: false
-                    }
-                }]
-            });
-            $("#food_line-up .wrap2 .teb_menu ul.teb_list:nth-child(2)").slick({
-                autoplay: true,
-                autoplaySpeed: 4000,
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                speed: 1000,
-                responsive: [{
-                    breakpoint: 461,
-                    settings: {
-                    arrows: false,
-                    autoplay: false,
-                    swipe: true,
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: false
-                    }
-                }]
-            });
-        });
-        $(document).ready(function(){
-            $("#musician_line-up .wrap2 .teb_img ul.line-up").slick({
-                autoplay: true,
-                autoplaySpeed: 4000,
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                speed: 1000,
-                responsive: [{
-                    breakpoint: 461,
-                    settings: {
-                    arrows: false,
-                    autoplay: false,
-                    swipe: true,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: false
-                    }
-                }]
-            });
-            $("#musician_line-up .wrap2 .teb_menu ul.teb_list li:first-child a").css({
-                background: "#f08c68",
-                color: "#fff"
-            });
-            $("#musician_line-up .wrap2 .teb_menu ul.teb_list li a").click(function(){
-                $(this).css({
-                    background: "#f08c68",
-                    color: "#fff"
-                });
-                $("#musician_line-up .wrap2 .teb_menu ul.teb_list li a").not(this).css({
-                    background: "",
-                    color: ""
-                });
-                // 구분선
-                var index = $(this).parent().index();
-                $(".teb_img .musician_list").css("display", "none");
-                $(".teb_img .musician_list:eq(" + index + ")").css("display", "block");
-                $("#musician_line-up .wrap2 .teb_img ul.line-up").slick('refresh');
-                return false;
-            });
-        });
-    </script>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <section id="title">
@@ -480,7 +382,7 @@
         <div class="wrap2 padding100">
             <h2 class="h1 flex flex-center">Food Line-Up</h2>
             <div class="teb_menu">
-                <ul class="teb_list">
+                <ul class="teb_list food-list-primary">
                     <li class="slick-not-css">
                         <a href="">
                             <img src="img/food/food1.jpg" alt="버거팩토리의 시그니쳐 버거">
@@ -587,7 +489,7 @@
                         <p class="h7">대구막창</p>
                     </li>
                 </ul>
-                <ul class="teb_list">
+                <ul class="teb_list food-list-secondary">
                     <li class="slick-not-css">
                         <a href="">
                             <img src="img/food/food17.jpg" alt="">
